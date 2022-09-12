@@ -1,0 +1,11 @@
+CREATE SCHEMA `practice` ;
+
+use practice;
+
+CREATE TABLE `practice`.`websites` (
+  `uniqueID` INT NOT NULL AUTO_INCREMENT,
+  `site_name` VARCHAR(150) NULL,
+  `secret` VARCHAR(50) NULL,
+  PRIMARY KEY (`uniqueID`));
+
+insert into practice.websites (site_name, secret) values ('My Gmail 2FA', 'TMOX3J2R7U5DBK3F');
